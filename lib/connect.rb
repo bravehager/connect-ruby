@@ -9,6 +9,7 @@ require "google/protobuf"
 require "zeitwerk"
 
 loader = Zeitwerk::Loader.for_gem
+loader.ignore("#{__dir__}/connect-ruby.rb")
 loader.inflector.inflect(
   "dsl" => "DSL",
 )

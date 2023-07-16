@@ -11,6 +11,10 @@ AllCops:
   Exclude:
     - "**/*_pb.rb"
 
+Naming/FileName:
+  Exclude:
+    - "lib/connect-ruby.rb"
+
 RSpec/ExampleLength:
   Enabled: false
 
