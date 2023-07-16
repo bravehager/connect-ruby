@@ -9,7 +9,7 @@ require_relative "ping_pb"
 module Ping
   module V1
     module PingService
-      class Client < ::Connect::Service
+      class Client < ::Connect::Client
         self.service = "ping.v1.PingService"
 
         rpc :Ping, PingRequest, PingResponse
