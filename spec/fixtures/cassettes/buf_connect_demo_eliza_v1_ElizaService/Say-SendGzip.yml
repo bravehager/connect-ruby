@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:8080/buf.connect.demo.eliza.v1.ElizaService/Say
+    body:
+      encoding: ASCII-8BIT
+      base64_string: 'H4sIABlXtGQAA+Pi9UjNycnXUSjPL8pJUQQAzo604w8AAAA=
+
+        '
+    headers:
+      Accept-Encoding:
+      - gzip
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:8080
+      Connect-Protocol-Version:
+      - '1'
+      Content-Type:
+      - application/proto
+      Content-Encoding:
+      - gzip
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Encoding:
+      - gzip
+      Content-Type:
+      - application/proto
+      Vary:
+      - Origin
+      Date:
+      - Sun, 16 Jul 2023 20:46:17 GMT
+      Content-Length:
+      - '43'
+    body:
+      encoding: UTF-8
+      base64_string: 'CilIZWxsby4uLkknbSBnbGFkIHlvdSBjb3VsZCBkcm9wIGJ5IHRvZGF5Lg==
+
+        '
+  recorded_at: Sun, 16 Jul 2023 20:46:17 GMT
+recorded_with: VCR 6.2.0

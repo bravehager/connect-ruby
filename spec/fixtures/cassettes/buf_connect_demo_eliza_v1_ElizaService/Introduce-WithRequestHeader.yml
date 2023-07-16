@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:8080/buf.connect.demo.eliza.v1.ElizaService/Introduce
+    body:
+      encoding: UTF-8
+      string: "\0\0\0\0\n\n\bJane Doe"
+    headers:
+      Accept-Encoding:
+      - identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:8080
+      Connect-Protocol-Version:
+      - '1'
+      Content-Type:
+      - application/connect+proto
+      Connect-Accept-Encoding:
+      - identity
+      Transfer-Encoding:
+      - chunked
+      X-Header:
+      - foo
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connect-Accept-Encoding:
+      - gzip
+      Content-Type:
+      - application/connect+proto
+      Vary:
+      - Origin
+      Date:
+      - Sun, 16 Jul 2023 21:05:31 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "\0\0\0\0\x19\n\x17Hi Jane Doe. I'm Eliza.\0\0\0\0D\nBBefore we begin,
+        Jane Doe, let me tell you something about myself.\0\0\0\0\"\n I am a Rogerian
+        psychotherapist.\0\0\0\0\x1C\n\x1AHow are you feeling today?\x02\0\0\0\x02{}"
+  recorded_at: Sun, 16 Jul 2023 21:05:31 GMT
+recorded_with: VCR 6.2.0

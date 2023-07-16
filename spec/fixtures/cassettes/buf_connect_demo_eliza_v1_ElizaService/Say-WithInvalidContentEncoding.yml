@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:8080/buf.connect.demo.eliza.v1.ElizaService/Say
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIABlXtGQAA+Pi9UjNycnXUSjPL8pJUQQAzo604w8AAAA=
+    headers:
+      Accept-Encoding:
+      - identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:8080
+      Connect-Protocol-Version:
+      - '1'
+      Content-Type:
+      - application/proto
+      Content-Encoding:
+      - identity
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Accept-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Vary:
+      - Origin
+      Date:
+      - Sun, 16 Jul 2023 20:46:17 GMT
+      Content-Length:
+      - '120'
+    body:
+      encoding: UTF-8
+      string: '{"code":"invalid_argument","message":"unmarshal into *elizav1.SayRequest:
+        proto: cannot parse invalid wire-format data"}'
+  recorded_at: Sun, 16 Jul 2023 20:46:17 GMT
+recorded_with: VCR 6.2.0

@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:8080/buf.connect.demo.eliza.v1.ElizaService/Introduce
+    body:
+      encoding: UTF-8
+      base64_string: 'AQAAAB4fiwgAGVe0ZAAD4+LwSsxLVXDJTwUAWT3csQoAAAA=
+
+        '
+    headers:
+      Accept-Encoding:
+      - identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:8080
+      Connect-Protocol-Version:
+      - '1'
+      Content-Type:
+      - application/connect+proto
+      Connect-Accept-Encoding:
+      - gzip
+      Connect-Content-Encoding:
+      - gzip
+      Transfer-Encoding:
+      - chunked
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connect-Accept-Encoding:
+      - gzip
+      Connect-Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/connect+proto
+      Vary:
+      - Origin
+      Date:
+      - Sun, 16 Jul 2023 20:46:17 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      base64_string: |
+        AAAAABkKF0hpIEphbmUgRG9lLiBJJ20gRWxpemEuAAAAAEQKQkJlZm9yZSB3
+        ZSBiZWdpbiwgSmFuZSBEb2UsIGxldCBtZSB0ZWxsIHlvdSBzb21ldGhpbmcg
+        YWJvdXQgbXlzZWxmLgAAAABICkZJIHdhcyBvbmUgb2YgdGhlIGZpcnN0IHBy
+        b2dyYW1zIGNhcGFibGUgb2YgYXR0ZW1wdGluZyB0aGUgVHVyaW5nIHRlc3Qu
+        AAAAABwKGkhvdyBhcmUgeW91IGZlZWxpbmcgdG9kYXk/AgAAAAJ7fQ==
+  recorded_at: Sun, 16 Jul 2023 20:46:17 GMT
+recorded_with: VCR 6.2.0
